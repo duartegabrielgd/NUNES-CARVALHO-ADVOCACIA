@@ -7,32 +7,21 @@
 
     <title>Nunes Carvalho Advocacia</title>
 
-    <meta
-        name="description"
-        content="Nunes Carvalho Advocacia - Direito Cível e Direito Previdenciário."
-    >
+    <meta name="description"
+        content="Nunes Carvalho Advocacia. Direito Cível e Direito Previdenciário.">
 
-    <!-- Bootstrap -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
 
-    <!-- CSS próprio -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Controle direto das imagens -->
     <style>
-        /* Logo do menu */
         .logo-menu {
             width: 145px !important;
             height: 55px !important;
             object-fit: contain !important;
-            object-position: center !important;
-            display: block !important;
         }
 
-        /* Caixa principal do hero */
         .hero-logo-box {
             width: 100%;
             max-width: 420px;
@@ -51,29 +40,26 @@
         .hero-logo-box::before {
             content: "";
             position: absolute;
-            inset: 18px;
+            inset: 20px;
             border: 1px solid #c5aa70;
             pointer-events: none;
         }
 
         .hero-logo {
-            width: 100% !important;
-            max-width: 300px !important;
+            width: 300px !important;
             height: 300px !important;
+            max-width: 300px !important;
+            max-height: 300px !important;
             object-fit: contain !important;
-            object-position: center !important;
-            display: block !important;
             position: relative;
             z-index: 2;
         }
 
-        /* Logo da seção Sobre */
         .about-logo-box {
             width: 100%;
             max-width: 420px;
             height: 420px;
             margin: 0 auto;
-            padding: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -86,75 +72,48 @@
         .about-logo-box::before {
             content: "";
             position: absolute;
-            inset: 18px;
+            inset: 20px;
             border: 1px solid #c5aa70;
             pointer-events: none;
         }
 
         .about-logo {
-            width: 100% !important;
-            max-width: 300px !important;
+            width: 300px !important;
             height: 300px !important;
+            max-width: 300px !important;
+            max-height: 300px !important;
             object-fit: contain !important;
-            object-position: center !important;
-            display: block !important;
             position: relative;
             z-index: 2;
         }
 
-        /* Rodapé */
-        .logo-footer {
+        .footer-logo {
             width: 180px !important;
             height: 70px !important;
             object-fit: contain !important;
-            object-position: left center !important;
-            display: block !important;
-        }
-
-        @media (max-width: 991px) {
-
-            .hero-logo-box,
-            .about-logo-box {
-                max-width: 360px;
-                height: 360px;
-            }
-
-            .hero-logo,
-            .about-logo {
-                max-width: 260px !important;
-                height: 260px !important;
-            }
         }
 
         @media (max-width: 767px) {
 
-            .logo-menu {
-                width: 115px !important;
-                height: 50px !important;
-            }
-
             .hero-logo-box,
             .about-logo-box {
-                max-width: 300px;
-                height: 300px;
-                padding: 20px;
+                height: 320px;
+                margin-top: 30px;
             }
 
             .hero-logo,
             .about-logo {
-                max-width: 220px !important;
+                width: 220px !important;
                 height: 220px !important;
-            }
-
-            .logo-footer {
-                width: 150px !important;
-                height: 60px !important;
+                max-width: 220px !important;
+                max-height: 220px !important;
             }
         }
     </style>
 </head>
 
 <body>
+
 
     <!-- =========================
          MENU
@@ -169,10 +128,10 @@
                 <img
                     src="img/logo-nunes-carvalho.png"
                     alt="Nunes Carvalho Advocacia"
-                    class="logo-menu"
-                >
+                    class="logo-menu">
 
             </a>
+
 
             <button
                 class="navbar-toggler"
@@ -181,52 +140,68 @@
                 data-bs-target="#menuPrincipal"
                 aria-controls="menuPrincipal"
                 aria-expanded="false"
-                aria-label="Abrir menu"
-            >
+                aria-label="Abrir menu">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
+
 
             <div
                 class="collapse navbar-collapse"
-                id="menuPrincipal"
-            >
+                id="menuPrincipal">
 
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
+
                         <a
                             class="nav-link active"
-                            href="index.html"
-                        >
+                            href="index.html">
+
                             Início
+
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
+
                         <a
                             class="nav-link"
-                            href="pages/sobre.html"
-                        >
+                            href="pages/sobre.html">
+
                             Sobre
+
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
+
                         <a
                             class="nav-link"
-                            href="pages/areas.html"
-                        >
+                            href="pages/areas.html">
+
                             Áreas de Atuação
+
                         </a>
+
                     </li>
 
+
                     <li class="nav-item">
+
                         <a
                             class="nav-link"
-                            href="pages/contato.html"
-                        >
+                            href="pages/contato.html">
+
                             Contato
+
                         </a>
+
                     </li>
 
                 </ul>
@@ -238,351 +213,437 @@
     </nav>
 
 
+
     <!-- =========================
          HERO
     ========================== -->
 
-    <header class="hero">
+    <main>
 
-        <div class="container">
+        <section class="hero">
 
-            <div class="row align-items-center min-vh-75">
+            <div class="container">
 
-                <!-- TEXTO -->
-
-                <div class="col-lg-7">
-
-                    <p class="hero-subtitle">
-                        NUNES CARVALHO ADVOCACIA
-                    </p>
-
-                    <h1>
-                        Excelência e dedicação
-                        <span>na defesa dos seus direitos.</span>
-                    </h1>
-
-                    <p class="hero-text">
-                        Atuação especializada nas áreas de
-                        Direito Cível e Direito Previdenciário,
-                        com atendimento dedicado às necessidades
-                        de cada cliente.
-                    </p>
-
-                    <a
-                        href="pages/contato.html"
-                        class="btn-dourado"
-                    >
-                        Fale conosco
-                    </a>
-
-                </div>
+                <div class="row align-items-center min-vh-75 g-5">
 
 
-                <!-- LOGO -->
+                    <div class="col-lg-7">
 
-                <div class="col-lg-5 mt-5 mt-lg-0">
-
-                    <div class="hero-logo-box">
-
-                        <img
-                            src="img/logo-nunes-carvalho.png"
-                            alt="Logo Nunes Carvalho Advocacia"
-                            class="hero-logo"
-                        >
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </header>
-
-
-    <!-- =========================
-         SOBRE
-    ========================== -->
-
-    <section class="section-padding">
-
-        <div class="container">
-
-            <div class="row align-items-center g-5">
-
-                <div class="col-lg-7">
-
-                    <p class="section-subtitle">
-                        SOBRE O ESCRITÓRIO
-                    </p>
-
-                    <h2>
-                        Advocacia com atendimento
-                        próximo e profissional.
-                    </h2>
-
-                    <p>
-                        A Nunes Carvalho Advocacia atua na defesa
-                        dos interesses de seus clientes, buscando
-                        oferecer atendimento responsável,
-                        transparente e personalizado.
-                    </p>
-
-                    <p>
-                        O escritório possui atuação nas áreas de
-                        Direito Cível e Direito Previdenciário.
-                    </p>
-
-                    <a
-                        href="pages/sobre.html"
-                        class="link-dourado"
-                    >
-                        Conheça o escritório →
-                    </a>
-
-                </div>
-
-
-                <div class="col-lg-5">
-
-                    <div class="about-logo-box">
-
-                        <img
-                            src="img/logo-nunes-carvalho.png"
-                            alt="Logo Nunes Carvalho Advocacia"
-                            class="about-logo"
-                        >
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         ÁREAS DE ATUAÇÃO
-    ========================== -->
-
-    <section class="areas-section section-padding">
-
-        <div class="container">
-
-            <div class="text-center mb-5">
-
-                <p class="section-subtitle">
-                    ÁREAS DE ATUAÇÃO
-                </p>
-
-                <h2>
-                    Como podemos ajudar
-                </h2>
-
-                <p class="section-intro">
-                    Conheça as principais áreas de atuação
-                    da Nunes Carvalho Advocacia.
-                </p>
-
-            </div>
-
-
-            <div class="row g-4">
-
-                <!-- DIREITO CÍVEL -->
-
-                <div class="col-md-6">
-
-                    <div class="area-card">
-
-                        <div class="area-icon">
-                            ⚖
-                        </div>
-
-                        <h3>
-                            Direito Cível
-                        </h3>
-
-                        <p>
-                            Atuação jurídica em questões
-                            relacionadas ao Direito Cível,
-                            buscando soluções adequadas para
-                            cada situação apresentada pelo cliente.
+                        <p class="hero-subtitle">
+                            NUNES CARVALHO ADVOCACIA
                         </p>
 
-                        <a href="pages/areas.html">
-                            Saiba mais →
+
+                        <h1>
+
+                            Excelência e dedicação
+                            <span>
+                                na defesa dos seus direitos.
+                            </span>
+
+                        </h1>
+
+
+                        <p class="hero-text">
+
+                            Atendimento jurídico com atenção às
+                            necessidades de cada cliente, nas áreas
+                            de Direito Cível e Direito Previdenciário.
+
+                        </p>
+
+
+                        <a
+                            href="pages/areas.html"
+                            class="btn-dourado">
+
+                            Conheça nossa atuação
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="col-lg-5">
+
+                        <div class="hero-logo-box">
+
+                            <img
+                                src="img/logo-nunes-carvalho.png"
+                                alt="Logo Nunes Carvalho Advocacia"
+                                class="hero-logo">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SOBRE
+        ========================== -->
+
+        <section class="section-padding">
+
+            <div class="container">
+
+                <div class="row align-items-center g-5">
+
+
+                    <div class="col-lg-6">
+
+                        <p class="section-subtitle">
+                            SOBRE O ESCRITÓRIO
+                        </p>
+
+
+                        <h2>
+                            Advocacia com atendimento próximo
+                            e profissional.
+                        </h2>
+
+
+                        <p>
+
+                            A Nunes Carvalho Advocacia atua nas áreas
+                            de Direito Cível e Direito Previdenciário,
+                            oferecendo orientação e acompanhamento
+                            jurídico de acordo com as necessidades
+                            apresentadas por cada cliente.
+
+                        </p>
+
+
+                        <p>
+
+                            Conheça mais sobre o escritório,
+                            nossa atuação e nossos profissionais.
+
+                        </p>
+
+
+                        <a
+                            href="pages/sobre.html"
+                            class="link-dourado">
+
+                            Conheça o escritório →
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="col-lg-6">
+
+                        <div class="about-logo-box">
+
+                            <img
+                                src="img/logo-nunes-carvalho.png"
+                                alt="Logo Nunes Carvalho Advocacia"
+                                class="about-logo">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ÁREAS DE ATUAÇÃO
+        ========================== -->
+
+        <section class="areas-section section-padding">
+
+            <div class="container">
+
+
+                <div class="text-center mb-5">
+
+                    <p class="section-subtitle">
+                        ÁREAS DE ATUAÇÃO
+                    </p>
+
+
+                    <h2>
+                        Como podemos ajudar
+                    </h2>
+
+
+                    <p class="section-intro">
+
+                        Conheça as principais áreas de atuação
+                        da Nunes Carvalho Advocacia.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="row g-4">
+
+
+                    <!-- DIREITO CÍVEL -->
+
+                    <div class="col-md-6">
+
+                        <article class="area-card">
+
+                            <div class="area-icon">
+                                ⚖
+                            </div>
+
+
+                            <h3>
+                                Direito Cível
+                            </h3>
+
+
+                            <p>
+
+                                Atuação jurídica em questões
+                                relacionadas ao Direito Cível,
+                                com orientação e acompanhamento
+                                conforme cada situação.
+
+                            </p>
+
+
+                            <a
+                                href="pages/areas.html">
+
+                                Saiba mais →
+
+                            </a>
+
+                        </article>
+
+                    </div>
+
+
+
+                    <!-- DIREITO PREVIDENCIÁRIO -->
+
+                    <div class="col-md-6">
+
+                        <article class="area-card">
+
+                            <div class="area-icon">
+                                §
+                            </div>
+
+
+                            <h3>
+                                Direito Previdenciário
+                            </h3>
+
+
+                            <p>
+
+                                Orientação e atuação jurídica
+                                em questões relacionadas aos
+                                direitos previdenciários.
+
+                            </p>
+
+
+                            <a
+                                href="pages/areas.html">
+
+                                Saiba mais →
+
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="text-center mt-5">
+
+                    <a
+                        href="pages/areas.html"
+                        class="btn-dourado">
+
+                        Ver todas as áreas
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             EQUIPE
+        ========================== -->
+
+        <section class="section-padding">
+
+            <div class="container">
+
+
+                <div class="text-center mb-5">
+
+                    <p class="section-subtitle">
+                        NOSSA EQUIPE
+                    </p>
+
+
+                    <h2>
+                        Profissionais
+                    </h2>
+
+
+                    <p class="section-intro">
+
+                        Conheça os profissionais da
+                        Nunes Carvalho Advocacia.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="row justify-content-center g-4">
+
+
+                    <div class="col-md-5 col-lg-4">
+
+                        <div class="team-card">
+
+                            <div class="team-photo">
+
+                                <span>
+                                    A
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Dra. Andrea
+                            </h3>
+
+
+                            <p>
+                                Advocacia
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-5 col-lg-4">
+
+                        <div class="team-card">
+
+                            <div class="team-photo">
+
+                                <span>
+                                    B
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Dr. Bruna
+                            </h3>
+
+
+                            <p>
+                                Advocacia
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTATO
+        ========================== -->
+
+        <section class="contact-section">
+
+            <div class="container">
+
+                <div class="row align-items-center">
+
+
+                    <div class="col-lg-8">
+
+                        <p class="section-subtitle">
+                            ENTRE EM CONTATO
+                        </p>
+
+
+                        <h2>
+                            Vamos conversar sobre o seu caso.
+                        </h2>
+
+
+                        <p>
+
+                            Entre em contato com a
+                            Nunes Carvalho Advocacia
+                            para obter mais informações
+                            sobre atendimento.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-lg-4 text-lg-end">
+
+                        <a
+                            href="pages/contato.html"
+                            class="btn-light-custom">
+
+                            Fale conosco
+
                         </a>
 
                     </div>
 
                 </div>
 
-
-                <!-- DIREITO PREVIDENCIÁRIO -->
-
-                <div class="col-md-6">
-
-                    <div class="area-card">
-
-                        <div class="area-icon">
-                            §
-                        </div>
-
-                        <h3>
-                            Direito Previdenciário
-                        </h3>
-
-                        <p>
-                            Orientação e atuação jurídica em
-                            questões relacionadas aos direitos
-                            previdenciários.
-                        </p>
-
-                        <a href="pages/areas.html">
-                            Saiba mais →
-                        </a>
-
-                    </div>
-
-                </div>
-
             </div>
 
-        </div>
+        </section>
 
-    </section>
+    </main>
 
-
-    <!-- =========================
-         EQUIPE
-    ========================== -->
-
-    <section class="section-padding">
-
-        <div class="container">
-
-            <div class="text-center mb-5">
-
-                <p class="section-subtitle">
-                    NOSSA EQUIPE
-                </p>
-
-                <h2>
-                    Profissionais
-                </h2>
-
-                <p class="section-intro">
-                    Conheça os profissionais da
-                    Nunes Carvalho Advocacia.
-                </p>
-
-            </div>
-
-
-            <div class="row justify-content-center g-4">
-
-                <!-- ANDREA -->
-
-                <div class="col-md-5 col-lg-4">
-
-                    <div class="team-card">
-
-                        <div class="team-photo">
-                            <span>A</span>
-                        </div>
-
-                        <h3>
-                            Dra. Andrea
-                        </h3>
-
-                        <p>
-                            Advocacia
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- BRUNA -->
-
-                <div class="col-md-5 col-lg-4">
-
-                    <div class="team-card">
-
-                        <div class="team-photo">
-                            <span>B</span>
-                        </div>
-
-                        <h3>
-                            Dr. Bruna
-                        </h3>
-
-                        <p>
-                            Advocacia
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         CONTATO
-    ========================== -->
-
-    <section class="contact-section">
-
-        <div class="container">
-
-            <div class="row align-items-center">
-
-                <div class="col-lg-8">
-
-                    <p class="section-subtitle">
-                        ENTRE EM CONTATO
-                    </p>
-
-                    <h2>
-                        Vamos conversar sobre o seu caso.
-                    </h2>
-
-                    <p>
-                        Entre em contato com a Nunes Carvalho
-                        Advocacia para obter mais informações
-                        sobre atendimento e áreas de atuação.
-                    </p>
-
-                </div>
-
-
-                <div class="col-lg-4 text-lg-end">
-
-                    <a
-                        href="pages/contato.html"
-                        class="btn-light-custom"
-                    >
-                        Fale conosco
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
 
 
     <!-- =========================
@@ -595,13 +656,17 @@
 
             <div class="row g-4">
 
+
                 <div class="col-md-6">
 
-                    <img
-                        src="img/logo-nunes-carvalho.png"
-                        alt="Nunes Carvalho Advocacia"
-                        class="logo-footer"
-                    >
+                    <a href="index.html">
+
+                        <img
+                            src="img/logo-nunes-carvalho.png"
+                            alt="Nunes Carvalho Advocacia"
+                            class="footer-logo">
+
+                    </a>
 
                 </div>
 
@@ -612,9 +677,19 @@
                         Nunes Carvalho Advocacia
                     </h3>
 
+
                     <p>
                         Direito Cível e Direito Previdenciário
                     </p>
+
+
+                    <a
+                        href="pages/contato.html"
+                        class="link-dourado">
+
+                        Entre em contato →
+
+                    </a>
 
                 </div>
 
@@ -625,8 +700,10 @@
 
 
             <p class="footer-copy">
+
                 © 2026 Nunes Carvalho Advocacia.
                 Todos os direitos reservados.
+
             </p>
 
         </div>
@@ -634,14 +711,17 @@
     </footer>
 
 
-    <!-- Bootstrap JavaScript -->
+
+    <!-- =========================
+         BOOTSTRAP
+    ========================== -->
 
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    ></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 
-    <!-- JavaScript próprio -->
+    <!-- JAVASCRIPT DO PROJETO -->
 
     <script src="js/script.js"></script>
 
