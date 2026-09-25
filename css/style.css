@@ -1,25 +1,12 @@
-/* =====================================================
-   NUNES CARVALHO ADVOCACIA
-   CSS PRINCIPAL
-===================================================== */
-
-
-/* =====================================================
-   CONFIGURAÇÕES GERAIS
-===================================================== */
-
 :root {
     --dourado: #9a7b3f;
     --dourado-escuro: #735a29;
     --dourado-claro: #c5aa70;
-
     --preto: #222222;
     --cinza: #666666;
     --cinza-claro: #f7f6f3;
-
     --branco: #ffffff;
 }
-
 
 * {
     margin: 0;
@@ -27,28 +14,25 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
 
 body {
     font-family: "Georgia", "Times New Roman", serif;
     color: var(--preto);
     background-color: var(--branco);
     line-height: 1.7;
+    overflow-x: hidden;
 }
-
 
 a {
     text-decoration: none;
 }
 
-
-/* =====================================================
+/* =========================
    NAVBAR
-===================================================== */
+========================= */
 
 .navbar {
     min-height: 85px;
@@ -56,178 +40,134 @@ a {
     background-color: var(--branco);
 }
 
-
 .navbar-brand {
     display: flex;
     align-items: center;
 }
 
-
 .navbar-brand img {
     width: 145px;
     height: auto;
-    max-height: 70px;
+    max-height: 65px;
     object-fit: contain;
     display: block;
 }
 
-
 .nav-link {
     color: var(--preto) !important;
     margin-left: 25px;
-
     font-family: Arial, sans-serif;
     font-size: 0.9rem;
-
     transition: 0.3s;
 }
-
 
 .nav-link:hover,
 .nav-link.active {
     color: var(--dourado) !important;
 }
 
-
-/* =====================================================
+/* =========================
    HERO
-===================================================== */
+========================= */
 
 .hero {
     min-height: 650px;
-
     display: flex;
     align-items: center;
-
-    background:
-        linear-gradient(
-            90deg,
-            #ffffff 0%,
-            #ffffff 60%,
-            #f7f3ea 100%
-        );
+    background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #ffffff 58%,
+        #f7f3ea 100%
+    );
+    overflow: hidden;
 }
-
 
 .min-vh-75 {
     min-height: 650px;
 }
 
-
 .hero-subtitle,
 .section-subtitle {
     color: var(--dourado-escuro);
-
     font-family: Arial, sans-serif;
     font-size: 0.78rem;
     font-weight: 700;
-
     letter-spacing: 3px;
-
     margin-bottom: 18px;
 }
 
-
 .hero h1 {
     max-width: 720px;
-
     font-size: clamp(2.5rem, 5vw, 4.5rem);
     font-weight: 500;
-
     line-height: 1.12;
-
     margin-bottom: 25px;
 }
-
 
 .hero h1 span {
     display: block;
     color: var(--dourado-escuro);
 }
 
-
 .hero-text {
     max-width: 570px;
-
     color: var(--cinza);
-
     font-family: Arial, sans-serif;
     font-size: 1.05rem;
-
     margin-bottom: 35px;
 }
 
-
-/* =====================================================
-   BOTÃO DOURADO
-===================================================== */
+/* =========================
+   BOTÃO
+========================= */
 
 a.btn-dourado {
     display: inline-block !important;
-
     background-color: var(--dourado-escuro) !important;
     color: var(--branco) !important;
-
     padding: 14px 30px !important;
-
     border: 1px solid var(--dourado-escuro) !important;
     border-radius: 2px !important;
-
     font-family: Arial, sans-serif;
     font-size: 0.9rem;
     font-weight: 500;
-
     transition: all 0.3s ease;
 }
-
 
 a.btn-dourado:hover {
     background-color: var(--dourado) !important;
     border-color: var(--dourado) !important;
-
     color: var(--branco) !important;
 }
 
+/* =========================
+   LOGO DO HERO
+========================= */
 
-/* =====================================================
-   SEÇÕES
-===================================================== */
+.logo-principal {
+    display: block;
 
-.section-padding {
-    padding: 100px 0;
-}
+    width: auto;
+    max-width: 70%;
+    height: auto;
+    max-height: 330px;
 
+    object-fit: contain;
+    object-position: center;
 
-section h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 500;
+    position: relative;
+    z-index: 2;
 
-    line-height: 1.2;
-
-    margin-bottom: 25px;
-}
-
-
-section p {
-    color: var(--cinza);
-}
-
-
-.section-intro {
-    max-width: 650px;
     margin: 0 auto;
-
-    font-family: Arial, sans-serif;
 }
 
-
-/* =====================================================
-   SOBRE
-===================================================== */
+/* =========================
+   CAIXA DA LOGO
+========================= */
 
 .about-box {
     min-height: 420px;
-
     margin-left: 40px;
 
     background-color: #faf8f3;
@@ -239,14 +179,14 @@ section p {
     justify-content: center;
 
     position: relative;
-}
 
+    overflow: hidden;
+}
 
 .about-box::before {
     content: "";
 
     position: absolute;
-
     inset: 20px;
 
     border: 1px solid var(--dourado-claro);
@@ -254,46 +194,94 @@ section p {
     pointer-events: none;
 }
 
+.about-box img {
+    max-width: 75%;
+    max-height: 300px;
 
-.about-logo {
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
     position: relative;
     z-index: 1;
-
-    width: 75%;
-    max-width: 400px;
-    height: auto;
 }
 
+/* =========================
+   SEGUNDA CAIXA
+========================= */
+
+.about-box-secondary {
+    min-height: 420px;
+    background-color: #faf8f3;
+    border: 1px solid #e8e2d6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.about-box-secondary img {
+    max-width: 75%;
+    max-height: 300px;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section-padding {
+    padding: 100px 0;
+}
+
+section h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+section p {
+    color: var(--cinza);
+}
+
+.section-intro {
+    max-width: 650px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
 
 .link-dourado {
     display: inline-block;
-
     margin-top: 15px;
-
     color: var(--dourado-escuro);
-
     font-family: Arial, sans-serif;
     font-weight: 600;
 }
-
 
 .link-dourado:hover {
     color: var(--dourado);
 }
 
-
-/* =====================================================
-   ÁREAS DE ATUAÇÃO
-===================================================== */
+/* =========================
+   ÁREAS
+========================= */
 
 .areas-section {
     background-color: var(--cinza-claro);
 }
 
-
 .area-card {
     height: 100%;
-
     padding: 45px;
 
     background-color: var(--branco);
@@ -303,14 +291,10 @@ section p {
     transition: 0.3s;
 }
 
-
 .area-card:hover {
     transform: translateY(-7px);
-
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
-
 
 .area-icon {
     width: 55px;
@@ -323,29 +307,23 @@ section p {
     margin-bottom: 25px;
 
     border: 1px solid var(--dourado);
-
     color: var(--dourado-escuro);
 
     font-size: 1.6rem;
 }
 
-
 .area-card h3 {
     font-size: 1.7rem;
     font-weight: 500;
-
     margin-bottom: 15px;
 }
-
 
 .area-card p {
     font-family: Arial, sans-serif;
 }
 
-
 .area-card a {
     display: inline-block;
-
     margin-top: 10px;
 
     color: var(--dourado-escuro);
@@ -354,19 +332,16 @@ section p {
     font-weight: 600;
 }
 
-
 .area-card a:hover {
     color: var(--dourado);
 }
 
-
-/* =====================================================
+/* =========================
    EQUIPE
-===================================================== */
+========================= */
 
 .team-card {
     padding: 35px;
-
     text-align: center;
 
     border: 1px solid #e8e2d6;
@@ -376,14 +351,10 @@ section p {
     transition: 0.3s;
 }
 
-
 .team-card:hover {
     transform: translateY(-5px);
-
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
 }
-
 
 .team-photo {
     width: 150px;
@@ -400,51 +371,41 @@ section p {
     justify-content: center;
 }
 
-
 .team-photo span {
     color: var(--branco);
-
     font-size: 2.5rem;
 }
 
-
 .team-card h3 {
     font-size: 1.5rem;
-
     margin-bottom: 5px;
 }
 
-
 .team-card p {
     margin: 0;
-
     font-family: Arial, sans-serif;
 }
 
-
-/* =====================================================
+/* =========================
    CONTATO
-===================================================== */
+========================= */
 
 .contact-section {
     padding: 80px 0;
-
     background-color: var(--dourado-escuro);
 }
-
 
 .contact-section .section-subtitle {
     color: var(--dourado-claro);
 }
-
 
 .contact-section h2,
 .contact-section p {
     color: var(--branco);
 }
 
-
-.contact-section .btn-light {
+.contact-section .btn-light,
+.btn-light-custom {
     padding: 14px 30px;
 
     border-radius: 2px;
@@ -453,10 +414,9 @@ section p {
     font-weight: 500;
 }
 
-
-/* =====================================================
-   RODAPÉ
-===================================================== */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     padding: 55px 0 25px;
@@ -466,55 +426,42 @@ footer {
     color: var(--branco);
 }
 
-
 .footer-logo {
     width: 180px;
     max-width: 100%;
     height: auto;
 
-    filter: brightness(0) invert(1);
+    object-fit: contain;
 
     margin-bottom: 15px;
 }
 
-
 footer h3 {
     margin: 0;
-
     color: var(--branco);
-
     font-size: 1.4rem;
 }
 
-
 footer p {
     color: #bdbdbd;
-
     margin-bottom: 5px;
-
     font-family: Arial, sans-serif;
 }
-
 
 footer hr {
     margin: 35px 0 20px;
-
     border-color: #444;
 }
 
-
 .footer-copy {
     color: #999;
-
     font-family: Arial, sans-serif;
-
     font-size: 0.8rem;
 }
 
-
-/* =====================================================
-   RESPONSIVIDADE - TABLET
-===================================================== */
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 991px) {
 
@@ -522,45 +469,45 @@ footer hr {
         min-height: 75px;
     }
 
-
     .navbar-brand img {
         width: 125px;
     }
-
 
     .nav-link {
         margin-left: 0;
         padding: 10px 0;
     }
 
-
     .hero {
         min-height: 600px;
     }
-
 
     .min-vh-75 {
         min-height: 600px;
     }
 
+    .logo-principal {
+        max-width: 65%;
+        max-height: 280px;
+    }
 
     .about-box {
         margin: 50px 0 0;
-
         min-height: 350px;
     }
 
+    .about-box-secondary {
+        min-height: 350px;
+    }
 
     .section-padding {
         padding: 75px 0;
     }
-
 }
 
-
-/* =====================================================
-   RESPONSIVIDADE - CELULAR
-===================================================== */
+/* =========================
+   CELULAR
+========================= */
 
 @media (max-width: 767px) {
 
@@ -568,71 +515,70 @@ footer hr {
         min-height: 70px;
     }
 
-
     .navbar-brand img {
         width: 115px;
     }
 
-
     .hero {
-        min-height: 570px;
+        min-height: auto;
+        padding: 70px 0;
     }
-
 
     .min-vh-75 {
-        min-height: 570px;
+        min-height: auto;
     }
-
 
     .hero h1 {
         font-size: 2.5rem;
     }
 
-
     .hero-text {
         font-size: 0.95rem;
     }
 
+    .logo-principal {
+        max-width: 65%;
+        max-height: 240px;
+        margin-top: 40px;
+    }
 
     .section-padding {
         padding: 65px 0;
     }
 
-
     .about-box {
         min-height: 300px;
-
         margin-top: 30px;
     }
 
-
-    .about-logo {
-        width: 70%;
+    .about-box-secondary {
+        min-height: 300px;
+        margin-top: 30px;
     }
 
+    .about-box img,
+    .about-box-secondary img {
+        max-width: 70%;
+        max-height: 230px;
+    }
 
     .area-card {
         padding: 30px;
     }
 
-
     .contact-section {
         text-align: center;
     }
-
 
     .contact-section .btn {
         margin-top: 25px;
     }
 
-
     footer {
         text-align: center;
     }
 
-
     .footer-logo {
         width: 150px;
     }
-
 }
