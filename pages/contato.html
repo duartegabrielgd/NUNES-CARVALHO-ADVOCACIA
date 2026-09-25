@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | Nunes Carvalho Advocacia</title>
+
+    <meta name="description"
+        content="Entre em contato com a Nunes Carvalho Advocacia. Direito Cível e Direito Previdenciário.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .contato-card {
+            height: 100%;
+            padding: 35px;
+            background-color: #ffffff;
+            border: 1px solid #e8e2d6;
+        }
+
+        .contato-icon {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            border: 1px solid #9a7b3f;
+            color: #735a29;
+            font-size: 1.4rem;
+        }
+
+        .contato-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+
+        .contato-card p {
+            font-family: Arial, sans-serif;
+            color: #666666;
+            margin-bottom: 0;
+        }
+
+        .contato-form {
+            padding: 45px;
+            background-color: #ffffff;
+            border: 1px solid #e8e2d6;
+        }
+
+        .contato-form label {
+            font-family: Arial, sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #222222;
+        }
+
+        .contato-form .form-control,
+        .contato-form .form-select {
+            border: 1px solid #d8d1c4;
+            border-radius: 2px;
+            padding: 13px 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        .contato-form .form-control:focus,
+        .contato-form .form-select:focus {
+            border-color: #9a7b3f;
+            box-shadow: 0 0 0 0.15rem rgba(154, 123, 63, 0.15);
+        }
+
+        .contato-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .logo-contato-box {
+            min-height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #faf8f3;
+            border: 1px solid #e8e2d6;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-contato-box::before {
+            content: "";
+            position: absolute;
+            inset: 20px;
+            border: 1px solid #c5aa70;
+            pointer-events: none;
+        }
+
+        .logo-contato {
+            width: 220px !important;
+            height: 220px !important;
+            object-fit: contain !important;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (max-width: 767px) {
+
+            .contato-form {
+                padding: 30px;
+            }
+
+            .logo-contato-box {
+                min-height: 300px;
+                margin-top: 30px;
+            }
+
+            .logo-contato {
+                width: 180px !important;
+                height: 180px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo-nunes-carvalho.png"
+                    alt="Nunes Carvalho Advocacia"
+                    style="width:145px;height:55px;object-fit:contain;">
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="areas.html">
+                            Áreas de Atuação
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- CABEÇALHO -->
+    <section class="section-padding">
+
+        <div class="container">
+
+            <div class="text-center">
+
+                <p class="section-subtitle">
+                    FALE CONOSCO
+                </p>
+
+                <h1>
+                    Entre em contato
+                </h1>
+
+                <p class="section-intro">
+                    Entre em contato com a Nunes Carvalho Advocacia
+                    para obter mais informações sobre atendimento.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INFORMAÇÕES -->
+    <section class="section-padding bg-light">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="contato-card">
+
+                        <div class="contato-icon">
+                            ☎
+                        </div>
+
+                        <h3>
+                            Telefone
+                        </h3>
+
+                        <p>
+                            Entre em contato com o escritório
+                            para obter informações sobre atendimento.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="contato-card">
+
+                        <div class="contato-icon">
+                            ✉
+                        </div>
+
+                        <h3>
+                            E-mail
+                        </h3>
+
+                        <p>
+                            Envie sua mensagem para obter mais
+                            informações sobre nossos serviços.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="contato-card">
+
+                        <div class="contato-icon">
+                            ⌂
+                        </div>
+
+                        <h3>
+                            Atendimento
+                        </h3>
+
+                        <p>
+                            Consulte o escritório sobre as opções
+                            disponíveis para atendimento.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FORMULÁRIO -->
+    <section class="section-padding">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <div class="col-lg-7">
+
+                    <div class="contato-form">
+
+                        <p class="section-subtitle">
+                            ENVIE UMA MENSAGEM
+                        </p>
+
+                        <h2>
+                            Fale com nossa equipe
+                        </h2>
+
+                        <p>
+                            Preencha os campos abaixo para
+                            registrar sua mensagem.
+                        </p>
+
+
+                        <form id="formContato">
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+
+                                    <label for="nome">
+                                        Nome
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="nome"
+                                        name="nome"
+                                        placeholder="Digite seu nome"
+                                        required>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="email">
+                                        E-mail
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Digite seu e-mail"
+                                        required>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="telefone">
+                                        Telefone
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        class="form-control"
+                                        id="telefone"
+                                        name="telefone"
+                                        placeholder="Digite seu telefone">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="assunto">
+                                        Assunto
+                                    </label>
+
+                                    <select
+                                        class="form-select"
+                                        id="assunto"
+                                        name="assunto"
+                                        required>
+
+                                        <option value="" selected disabled>
+                                            Selecione uma opção
+                                        </option>
+
+                                        <option value="civel">
+                                            Direito Cível
+                                        </option>
+
+                                        <option value="previdenciario">
+                                            Direito Previdenciário
+                                        </option>
+
+                                        <option value="outro">
+                                            Outros assuntos
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="col-12">
+
+                                    <label for="mensagem">
+                                        Mensagem
+                                    </label>
+
+                                    <textarea
+                                        class="form-control"
+                                        id="mensagem"
+                                        name="mensagem"
+                                        placeholder="Digite sua mensagem"
+                                        required></textarea>
+
+                                </div>
+
+
+                                <div class="col-12">
+
+                                    <button
+                                        type="submit"
+                                        class="btn-dourado border-0">
+
+                                        Enviar mensagem
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-5">
+
+                    <div class="logo-contato-box">
+
+                        <img
+                            src="../img/logo-nunes-carvalho.png"
+                            alt="Logo Nunes Carvalho Advocacia"
+                            class="logo-contato">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="contact-section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <p class="section-subtitle">
+                        NUNES CARVALHO ADVOCACIA
+                    </p>
+
+                    <h2>
+                        Direito Cível e Direito Previdenciário.
+                    </h2>
+
+                    <p>
+                        Conheça nossas áreas de atuação e entre
+                        em contato para obter mais informações.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end">
+
+                    <a href="areas.html" class="btn-light-custom">
+                        Áreas de atuação
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+
+                    <img
+                        src="../img/logo-nunes-carvalho.png"
+                        alt="Nunes Carvalho Advocacia"
+                        style="width:180px;height:70px;object-fit:contain;">
+
+                </div>
+
+                <div class="col-md-6 text-md-end">
+
+                    <h3>
+                        Nunes Carvalho Advocacia
+                    </h3>
+
+                    <p>
+                        Direito Cível e Direito Previdenciário
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="footer-copy">
+                © 2026 Nunes Carvalho Advocacia.
+                Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

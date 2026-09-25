@@ -8,6 +8,10 @@
     --branco: #ffffff;
 }
 
+/* =========================
+   RESET
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -30,8 +34,9 @@ a {
     text-decoration: none;
 }
 
+
 /* =========================
-   NAVBAR
+   MENU
 ========================= */
 
 .navbar {
@@ -47,7 +52,7 @@ a {
 
 .navbar-brand img {
     width: 145px;
-    height: auto;
+    height: 55px;
     max-height: 65px;
     object-fit: contain;
     display: block;
@@ -65,6 +70,15 @@ a {
 .nav-link.active {
     color: var(--dourado) !important;
 }
+
+.navbar-toggler {
+    border: 1px solid var(--dourado-claro);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem rgba(154, 123, 63, 0.2);
+}
+
 
 /* =========================
    HERO
@@ -118,11 +132,13 @@ a {
     margin-bottom: 35px;
 }
 
+
 /* =========================
-   BOTÃO
+   BOTÕES
 ========================= */
 
-a.btn-dourado {
+a.btn-dourado,
+button.btn-dourado {
     display: inline-block !important;
     background-color: var(--dourado-escuro) !important;
     color: var(--branco) !important;
@@ -135,32 +151,47 @@ a.btn-dourado {
     transition: all 0.3s ease;
 }
 
-a.btn-dourado:hover {
+a.btn-dourado:hover,
+button.btn-dourado:hover {
     background-color: var(--dourado) !important;
     border-color: var(--dourado) !important;
     color: var(--branco) !important;
 }
 
+.btn-light-custom {
+    display: inline-block;
+    padding: 14px 30px;
+    border: 1px solid var(--branco);
+    border-radius: 2px;
+    color: var(--branco);
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-light-custom:hover {
+    background-color: var(--branco);
+    color: var(--dourado-escuro);
+}
+
+
 /* =========================
-   LOGO DO HERO
+   LOGO PRINCIPAL
 ========================= */
 
 .logo-principal {
     display: block;
-
-    width: auto;
-    max-width: 70%;
-    height: auto;
-    max-height: 330px;
-
-    object-fit: contain;
+    width: 300px !important;
+    height: 300px !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
+    object-fit: contain !important;
     object-position: center;
-
     position: relative;
     z-index: 2;
-
     margin: 0 auto;
 }
+
 
 /* =========================
    CAIXA DA LOGO
@@ -169,71 +200,52 @@ a.btn-dourado:hover {
 .about-box {
     min-height: 420px;
     margin-left: 40px;
-
     background-color: #faf8f3;
-
     border: 1px solid #e8e2d6;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
-
     overflow: hidden;
 }
 
 .about-box::before {
     content: "";
-
     position: absolute;
     inset: 20px;
-
     border: 1px solid var(--dourado-claro);
-
     pointer-events: none;
 }
 
 .about-box img {
     max-width: 75%;
     max-height: 300px;
-
     width: auto;
     height: auto;
-
     object-fit: contain;
-
     position: relative;
     z-index: 1;
 }
-
-/* =========================
-   SEGUNDA CAIXA
-========================= */
 
 .about-box-secondary {
     min-height: 420px;
     background-color: #faf8f3;
     border: 1px solid #e8e2d6;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
-
     overflow: hidden;
 }
 
 .about-box-secondary img {
     max-width: 75%;
     max-height: 300px;
-
     width: auto;
     height: auto;
-
     object-fit: contain;
 }
+
 
 /* =========================
    SEÇÕES
@@ -241,6 +253,13 @@ a.btn-dourado:hover {
 
 .section-padding {
     padding: 100px 0;
+}
+
+section h1 {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 25px;
 }
 
 section h2 {
@@ -272,6 +291,7 @@ section p {
     color: var(--dourado);
 }
 
+
 /* =========================
    ÁREAS
 ========================= */
@@ -283,11 +303,8 @@ section p {
 .area-card {
     height: 100%;
     padding: 45px;
-
     background-color: var(--branco);
-
     border: 1px solid #e8e2d6;
-
     transition: 0.3s;
 }
 
@@ -299,16 +316,12 @@ section p {
 .area-icon {
     width: 55px;
     height: 55px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin-bottom: 25px;
-
     border: 1px solid var(--dourado);
     color: var(--dourado-escuro);
-
     font-size: 1.6rem;
 }
 
@@ -325,9 +338,7 @@ section p {
 .area-card a {
     display: inline-block;
     margin-top: 10px;
-
     color: var(--dourado-escuro);
-
     font-family: Arial, sans-serif;
     font-weight: 600;
 }
@@ -336,6 +347,7 @@ section p {
     color: var(--dourado);
 }
 
+
 /* =========================
    EQUIPE
 ========================= */
@@ -343,11 +355,8 @@ section p {
 .team-card {
     padding: 35px;
     text-align: center;
-
     border: 1px solid #e8e2d6;
-
     background-color: var(--branco);
-
     transition: 0.3s;
 }
 
@@ -359,13 +368,9 @@ section p {
 .team-photo {
     width: 150px;
     height: 150px;
-
     margin: 0 auto 25px;
-
     border-radius: 50%;
-
     background-color: var(--dourado-escuro);
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -386,6 +391,7 @@ section p {
     font-family: Arial, sans-serif;
 }
 
+
 /* =========================
    CONTATO
 ========================= */
@@ -404,35 +410,22 @@ section p {
     color: var(--branco);
 }
 
-.contact-section .btn-light,
-.btn-light-custom {
-    padding: 14px 30px;
-
-    border-radius: 2px;
-
-    font-family: Arial, sans-serif;
-    font-weight: 500;
-}
 
 /* =========================
-   FOOTER
+   RODAPÉ
 ========================= */
 
 footer {
     padding: 55px 0 25px;
-
     background-color: #1d1d1b;
-
     color: var(--branco);
 }
 
 .footer-logo {
-    width: 180px;
+    width: 180px !important;
+    height: 70px !important;
     max-width: 100%;
-    height: auto;
-
     object-fit: contain;
-
     margin-bottom: 15px;
 }
 
@@ -459,6 +452,7 @@ footer hr {
     font-size: 0.8rem;
 }
 
+
 /* =========================
    TABLET
 ========================= */
@@ -470,53 +464,17 @@ footer hr {
     }
 
     .navbar-brand img {
-        width: 125px;
+        width: 135px;
+        height: 52px;
+    }
+
+    .navbar-nav {
+        padding: 20px 0;
     }
 
     .nav-link {
         margin-left: 0;
-        padding: 10px 0;
-    }
-
-    .hero {
-        min-height: 600px;
-    }
-
-    .min-vh-75 {
-        min-height: 600px;
-    }
-
-    .logo-principal {
-        max-width: 65%;
-        max-height: 280px;
-    }
-
-    .about-box {
-        margin: 50px 0 0;
-        min-height: 350px;
-    }
-
-    .about-box-secondary {
-        min-height: 350px;
-    }
-
-    .section-padding {
-        padding: 75px 0;
-    }
-}
-
-/* =========================
-   CELULAR
-========================= */
-
-@media (max-width: 767px) {
-
-    .navbar {
-        min-height: 70px;
-    }
-
-    .navbar-brand img {
-        width: 115px;
+        padding: 10px 0 !important;
     }
 
     .hero {
@@ -529,56 +487,147 @@ footer hr {
     }
 
     .hero h1 {
+        font-size: clamp(2.5rem, 7vw, 4rem);
+    }
+
+    .logo-principal {
+        width: 260px !important;
+        height: 260px !important;
+        max-width: 260px !important;
+        max-height: 260px !important;
+    }
+
+    .about-box {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .section-padding {
+        padding: 75px 0;
+    }
+
+    .area-card {
+        padding: 35px;
+    }
+
+    .contact-section {
+        padding: 65px 0;
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 767px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    .navbar {
+        min-height: 70px;
+    }
+
+    .navbar-brand img {
+        width: 125px;
+        height: 50px;
+    }
+
+    .hero {
+        padding: 55px 0;
+        background: linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #ffffff 65%,
+            #f7f3ea 100%
+        );
+    }
+
+    .hero h1 {
         font-size: 2.5rem;
     }
 
     .hero-text {
-        font-size: 0.95rem;
+        font-size: 1rem;
+    }
+
+    .hero .btn-dourado {
+        width: 100%;
+        text-align: center;
     }
 
     .logo-principal {
-        max-width: 65%;
-        max-height: 240px;
-        margin-top: 40px;
-    }
-
-    .section-padding {
-        padding: 65px 0;
+        width: 220px !important;
+        height: 220px !important;
+        max-width: 220px !important;
+        max-height: 220px !important;
     }
 
     .about-box {
-        min-height: 300px;
-        margin-top: 30px;
+        min-height: 330px;
+        margin-left: 0;
+    }
+
+    .about-box::before {
+        inset: 15px;
+    }
+
+    .about-box img {
+        max-width: 70%;
+        max-height: 230px;
     }
 
     .about-box-secondary {
-        min-height: 300px;
-        margin-top: 30px;
+        min-height: 330px;
     }
 
-    .about-box img,
     .about-box-secondary img {
         max-width: 70%;
         max-height: 230px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    section h1 {
+        font-size: 2.4rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
     }
 
     .area-card {
         padding: 30px;
     }
 
+    .team-card {
+        padding: 30px;
+    }
+
     .contact-section {
+        padding: 55px 0;
         text-align: center;
     }
 
-    .contact-section .btn {
-        margin-top: 25px;
+    .contact-section .btn-light-custom {
+        margin-top: 20px;
     }
 
     footer {
         text-align: center;
+        padding: 45px 0 20px;
     }
 
-    .footer-logo {
-        width: 150px;
+    footer .text-md-end {
+        text-align: center !important;
     }
 }
