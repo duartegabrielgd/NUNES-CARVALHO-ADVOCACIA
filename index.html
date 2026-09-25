@@ -20,6 +20,138 @@
 
     <!-- CSS próprio -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Controle direto das imagens -->
+    <style>
+        /* Logo do menu */
+        .logo-menu {
+            width: 145px !important;
+            height: 55px !important;
+            object-fit: contain !important;
+            object-position: center !important;
+            display: block !important;
+        }
+
+        /* Caixa principal do hero */
+        .hero-logo-box {
+            width: 100%;
+            max-width: 420px;
+            height: 420px;
+            margin: 0 auto;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #faf8f3;
+            border: 1px solid #e8e2d6;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-logo-box::before {
+            content: "";
+            position: absolute;
+            inset: 18px;
+            border: 1px solid #c5aa70;
+            pointer-events: none;
+        }
+
+        .hero-logo {
+            width: 100% !important;
+            max-width: 300px !important;
+            height: 300px !important;
+            object-fit: contain !important;
+            object-position: center !important;
+            display: block !important;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Logo da seção Sobre */
+        .about-logo-box {
+            width: 100%;
+            max-width: 420px;
+            height: 420px;
+            margin: 0 auto;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #faf8f3;
+            border: 1px solid #e8e2d6;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-logo-box::before {
+            content: "";
+            position: absolute;
+            inset: 18px;
+            border: 1px solid #c5aa70;
+            pointer-events: none;
+        }
+
+        .about-logo {
+            width: 100% !important;
+            max-width: 300px !important;
+            height: 300px !important;
+            object-fit: contain !important;
+            object-position: center !important;
+            display: block !important;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Rodapé */
+        .logo-footer {
+            width: 180px !important;
+            height: 70px !important;
+            object-fit: contain !important;
+            object-position: left center !important;
+            display: block !important;
+        }
+
+        @media (max-width: 991px) {
+
+            .hero-logo-box,
+            .about-logo-box {
+                max-width: 360px;
+                height: 360px;
+            }
+
+            .hero-logo,
+            .about-logo {
+                max-width: 260px !important;
+                height: 260px !important;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .logo-menu {
+                width: 115px !important;
+                height: 50px !important;
+            }
+
+            .hero-logo-box,
+            .about-logo-box {
+                max-width: 300px;
+                height: 300px;
+                padding: 20px;
+            }
+
+            .hero-logo,
+            .about-logo {
+                max-width: 220px !important;
+                height: 220px !important;
+            }
+
+            .logo-footer {
+                width: 150px !important;
+                height: 60px !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -37,10 +169,10 @@
                 <img
                     src="img/logo-nunes-carvalho.png"
                     alt="Nunes Carvalho Advocacia"
+                    class="logo-menu"
                 >
 
             </a>
-
 
             <button
                 class="navbar-toggler"
@@ -51,11 +183,8 @@
                 aria-expanded="false"
                 aria-label="Abrir menu"
             >
-
                 <span class="navbar-toggler-icon"></span>
-
             </button>
-
 
             <div
                 class="collapse navbar-collapse"
@@ -73,7 +202,6 @@
                         </a>
                     </li>
 
-
                     <li class="nav-item">
                         <a
                             class="nav-link"
@@ -83,7 +211,6 @@
                         </a>
                     </li>
 
-
                     <li class="nav-item">
                         <a
                             class="nav-link"
@@ -92,7 +219,6 @@
                             Áreas de Atuação
                         </a>
                     </li>
-
 
                     <li class="nav-item">
                         <a
@@ -112,7 +238,6 @@
     </nav>
 
 
-
     <!-- =========================
          HERO
     ========================== -->
@@ -123,7 +248,6 @@
 
             <div class="row align-items-center min-vh-75">
 
-
                 <!-- TEXTO -->
 
                 <div class="col-lg-7">
@@ -132,12 +256,10 @@
                         NUNES CARVALHO ADVOCACIA
                     </p>
 
-
                     <h1>
                         Excelência e dedicação
                         <span>na defesa dos seus direitos.</span>
                     </h1>
-
 
                     <p class="hero-text">
                         Atuação especializada nas áreas de
@@ -145,7 +267,6 @@
                         com atendimento dedicado às necessidades
                         de cada cliente.
                     </p>
-
 
                     <a
                         href="pages/contato.html"
@@ -157,17 +278,16 @@
                 </div>
 
 
-
-                <!-- LOGO PRINCIPAL -->
+                <!-- LOGO -->
 
                 <div class="col-lg-5 mt-5 mt-lg-0">
 
-                    <div class="about-box">
+                    <div class="hero-logo-box">
 
                         <img
                             src="img/logo-nunes-carvalho.png"
-                            alt="Nunes Carvalho Advocacia"
-                            class="logo-principal"
+                            alt="Logo Nunes Carvalho Advocacia"
+                            class="hero-logo"
                         >
 
                     </div>
@@ -181,7 +301,6 @@
     </header>
 
 
-
     <!-- =========================
          SOBRE
     ========================== -->
@@ -192,19 +311,16 @@
 
             <div class="row align-items-center g-5">
 
-
                 <div class="col-lg-7">
 
                     <p class="section-subtitle">
                         SOBRE O ESCRITÓRIO
                     </p>
 
-
                     <h2>
                         Advocacia com atendimento
                         próximo e profissional.
                     </h2>
-
 
                     <p>
                         A Nunes Carvalho Advocacia atua na defesa
@@ -213,12 +329,10 @@
                         transparente e personalizado.
                     </p>
 
-
                     <p>
                         O escritório possui atuação nas áreas de
                         Direito Cível e Direito Previdenciário.
                     </p>
-
 
                     <a
                         href="pages/sobre.html"
@@ -232,12 +346,12 @@
 
                 <div class="col-lg-5">
 
-                    <div class="about-box about-box-secondary">
+                    <div class="about-logo-box">
 
                         <img
                             src="img/logo-nunes-carvalho.png"
-                            alt="Nunes Carvalho Advocacia"
-                            class="logo-principal"
+                            alt="Logo Nunes Carvalho Advocacia"
+                            class="about-logo"
                         >
 
                     </div>
@@ -251,7 +365,6 @@
     </section>
 
 
-
     <!-- =========================
          ÁREAS DE ATUAÇÃO
     ========================== -->
@@ -260,18 +373,15 @@
 
         <div class="container">
 
-
             <div class="text-center mb-5">
 
                 <p class="section-subtitle">
                     ÁREAS DE ATUAÇÃO
                 </p>
 
-
                 <h2>
                     Como podemos ajudar
                 </h2>
-
 
                 <p class="section-intro">
                     Conheça as principais áreas de atuação
@@ -281,9 +391,7 @@
             </div>
 
 
-
             <div class="row g-4">
-
 
                 <!-- DIREITO CÍVEL -->
 
@@ -295,11 +403,9 @@
                             ⚖
                         </div>
 
-
                         <h3>
                             Direito Cível
                         </h3>
-
 
                         <p>
                             Atuação jurídica em questões
@@ -308,7 +414,6 @@
                             cada situação apresentada pelo cliente.
                         </p>
 
-
                         <a href="pages/areas.html">
                             Saiba mais →
                         </a>
@@ -316,7 +421,6 @@
                     </div>
 
                 </div>
-
 
 
                 <!-- DIREITO PREVIDENCIÁRIO -->
@@ -329,18 +433,15 @@
                             §
                         </div>
 
-
                         <h3>
                             Direito Previdenciário
                         </h3>
-
 
                         <p>
                             Orientação e atuação jurídica em
                             questões relacionadas aos direitos
                             previdenciários.
                         </p>
-
 
                         <a href="pages/areas.html">
                             Saiba mais →
@@ -357,7 +458,6 @@
     </section>
 
 
-
     <!-- =========================
          EQUIPE
     ========================== -->
@@ -366,18 +466,15 @@
 
         <div class="container">
 
-
             <div class="text-center mb-5">
 
                 <p class="section-subtitle">
                     NOSSA EQUIPE
                 </p>
 
-
                 <h2>
                     Profissionais
                 </h2>
-
 
                 <p class="section-intro">
                     Conheça os profissionais da
@@ -387,9 +484,7 @@
             </div>
 
 
-
             <div class="row justify-content-center g-4">
-
 
                 <!-- ANDREA -->
 
@@ -398,16 +493,12 @@
                     <div class="team-card">
 
                         <div class="team-photo">
-                            <span>
-                                A
-                            </span>
+                            <span>A</span>
                         </div>
-
 
                         <h3>
                             Dra. Andrea
                         </h3>
-
 
                         <p>
                             Advocacia
@@ -418,7 +509,6 @@
                 </div>
 
 
-
                 <!-- BRUNA -->
 
                 <div class="col-md-5 col-lg-4">
@@ -426,16 +516,12 @@
                     <div class="team-card">
 
                         <div class="team-photo">
-                            <span>
-                                B
-                            </span>
+                            <span>B</span>
                         </div>
-
 
                         <h3>
                             Dr. Bruna
                         </h3>
-
 
                         <p>
                             Advocacia
@@ -452,7 +538,6 @@
     </section>
 
 
-
     <!-- =========================
          CONTATO
     ========================== -->
@@ -463,18 +548,15 @@
 
             <div class="row align-items-center">
 
-
                 <div class="col-lg-8">
 
                     <p class="section-subtitle">
                         ENTRE EM CONTATO
                     </p>
 
-
                     <h2>
                         Vamos conversar sobre o seu caso.
                     </h2>
-
 
                     <p>
                         Entre em contato com a Nunes Carvalho
@@ -503,7 +585,6 @@
     </section>
 
 
-
     <!-- =========================
          RODAPÉ
     ========================== -->
@@ -514,13 +595,12 @@
 
             <div class="row g-4">
 
-
                 <div class="col-md-6">
 
                     <img
                         src="img/logo-nunes-carvalho.png"
                         alt="Nunes Carvalho Advocacia"
-                        class="footer-logo"
+                        class="logo-footer"
                     >
 
                 </div>
@@ -531,7 +611,6 @@
                     <h3>
                         Nunes Carvalho Advocacia
                     </h3>
-
 
                     <p>
                         Direito Cível e Direito Previdenciário
@@ -553,7 +632,6 @@
         </div>
 
     </footer>
-
 
 
     <!-- Bootstrap JavaScript -->
